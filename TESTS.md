@@ -12,7 +12,13 @@ let card = "16468534223";
 cardVerify();
 Expected Output:"This card number is not valid."
 
+Description: luhnAlg()
 
+Test: "It should create a new set of numbers by transforming each digit in the inputted card number."
+Code:
+let card = "4102 0808 8043 5620";
+luhnAlg();
+Expected Output: "4204 0707 8046 5320"
 
 
 

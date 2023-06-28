@@ -9,7 +9,18 @@
     }
   };
 
-
+function luhnAlg(cardNumber) {
+  let arrX = cardNumber.split(" ");
+  let newCard = arrX.map(function(number, index) {
+    if (index % 2 === 1) {
+      return (parseInt(number) * 2).toString();
+    } else {
+    return number;
+    }
+  });
+console.log(newCard);
+return newCard.join(" ");
+}
 
 
 
